@@ -1,7 +1,13 @@
 # Hi to everyone! 🙂
 
-Team `Name` . 
-Members: 
+Team `Name`:
+
+Team Lead: Helina Järvesaar 
+Member: Svetlana Bolšakova
+Member: Irina Vorobjova
+Member:
+Member:
+Member:
 
 1. Svetlana Bolšakova (svetlana.bolshakova99@gmail.com). 
 Svetlana: I am from Tallinn (Estonia), my short name is Sveta.😀 
