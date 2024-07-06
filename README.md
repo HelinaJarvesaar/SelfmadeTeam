@@ -27,4 +27,13 @@ I have a cat british shorthair cat name Kiiz.
 
 - **Ilze Elīna Eiduka:**
 
-I’m a pharmacist, age 28, now working in a clinical research field as a clinical trial coordinator. During my free time I really like being outdoors, I prefer mountains over beaches and enjoy reading fantasy romances. I live with my husband and two ginger cats - Ķiploks (Garlic) and Grauzdiņš (Toast), and I am ready to change my career path. 
+I’m a pharmacist, age 28, now working 
+in a clinical research field as a 
+clinical trial coordinator. During my 
+free time I really like being 
+outdoors, I prefer mountains over 
+beaches and enjoy reading fantasy 
+romances. I live with my husband and 
+two ginger cats - Ķiploks (Garlic) and
+Grauzdiņš (Toast), and I am ready to
+change my career path. 
