@@ -19,10 +19,10 @@ I have a dog, French Buldog with name Richie.
 - **Irina:** I am from Tallinn (Estonia) 36 years old. Now I’m working in electricity company and selling electricity to businesses clients and participate in governmental tenders. Want to change my career and very happy that I’m in this course.
   
 - **Helina Järvesaar:** 
-I'm from Tartu Estonia, age 42
-Currently kitchen furniture designer.
-I'm here to make career change ot IT. Haven't learned coding before.
-I have a cat british shorthair cat name Kiiz.
+I'm from Tartu Estonia, age 42,
+currently kitchen furniture designer.
+I'm here to make career change to IT. Haven't learned coding before.
+I have a british shorthair cat name Kiiz.
 
 
 - **Ilze Elīna Eiduka:** 
