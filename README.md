@@ -1,6 +1,6 @@
 # Hi to everyone! 🙂
 
-**Team `Name`:**
+**Team `SELFMADED`:**
 
 1. Team Lead: Helina Järvesaar 
 2. Member: Svetlana Bolšakova
