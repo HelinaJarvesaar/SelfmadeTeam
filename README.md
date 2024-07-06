@@ -25,8 +25,7 @@ I'm here to make career change ot IT. Haven't learned coding before.
 I have a cat british shorthair cat name Kiiz.
 
 
-- **Ilze Elīna Eiduka:**
-
+- **Ilze Elīna Eiduka:** 
 I’m a pharmacist, age 28, now working 
 in a clinical research field as a 
 clinical trial coordinator. During my 
