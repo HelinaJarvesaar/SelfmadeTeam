@@ -6,8 +6,6 @@
 2. Member: Svetlana Bolšakova
 3. Member: Irina Vorobjova
 4. Member: Ilze Elīna Eiduka
-5. Member:
-6. Member:
 
 - **Svetlana Bolšakova:** 
 I am from Tallinn (Estonia), my short name is Sveta.😀 
