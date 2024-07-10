@@ -6,6 +6,7 @@
 2. Member: Svetlana Bolšakova
 3. Member: Irina Vorobjova
 4. Member: Ilze Elīna Eiduka
+5. Member: Beatrice
 
 - **Svetlana Bolšakova:** 
 I am from Tallinn (Estonia), my short name is Sveta.😀 
@@ -33,4 +34,6 @@ beaches and enjoy reading fantasy
 romances. I live with my husband and 
 two ginger cats - Ķiploks (Garlic) and
 Grauzdiņš (Toast), and I am ready to
-change my career path. 
+change my career path.
+
+- **Beatrice:** 
