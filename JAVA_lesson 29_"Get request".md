@@ -1,3 +1,4 @@
+```java
 package com.datorium.Datorium.API;
 
 import org.springframework.boot.SpringApplication;
@@ -44,3 +45,4 @@ public class DatoriumApiApplication {
 	
 	
 }
+```
