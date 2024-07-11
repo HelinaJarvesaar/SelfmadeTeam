@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 @RestController
 @CrossOrigin
@@ -43,6 +45,19 @@ public class DatoriumApiApplication {
 	@GetMapping("/array")
 	public int[] array() {
 		return new int[]{1, 2, 3, 4};
+	}
+
+	@GetMapping("/names")
+	public ArrayList<String> names(){
+
+		ArrayList<String> names = new ArrayList<String>();
+		names.add("Svetlana");
+		names.add("Irina");
+		names.add("Elina");
+		names.add("Beatrice");
+		names.add("Helina");
+		return  names;
+
 	}
 
 // 2. Create an object (new class, cheese or wine or whatever) in the endpoint, fill the object, access it from the URL	
