@@ -65,7 +65,7 @@ public class DatoriumApiApplication {
 
 	@GetMapping("/group")
 	public Group group() {
-		Group group = new Group("Selfmade", 5);
+		Group group = new Group("SelfmadeTeam", 5);
 		return group;
 	}
 		public class Group{
