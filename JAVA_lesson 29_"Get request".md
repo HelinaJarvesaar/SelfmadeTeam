@@ -38,11 +38,14 @@ public class DatoriumApiApplication {
 		return number1 * number2;
 	}
 
+// 1. Create an array in the endpoint, fill the array with data and access it from the URL
+
 	@GetMapping("/array")
 	public int[] array() {
 		return new int[]{1, 2, 3, 4};
 	}
-	
+
+// 2. Create an object (new class, cheese or wine or whatever) in the endpoint, fill the object, access it from the URL	
 	
 }
 ```
