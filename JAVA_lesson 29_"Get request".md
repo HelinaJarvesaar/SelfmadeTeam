@@ -78,5 +78,7 @@ public class DatoriumApiApplication {
 			}
 		}
 
+// 3. Create a new endpoint, that generates a two dimensional int array. Endpoint should be in /draw and should return two dimensional array
+
 }
 ```
