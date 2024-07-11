@@ -1,6 +1,8 @@
 ```java
 package com.datorium.Datorium.API;
 
+
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -42,14 +44,13 @@ public class DatoriumApiApplication {
 
 // 1. Create an array in the endpoint, fill the array with data and access it from the URL
 
-	@GetMapping("/array")
+	@GetMapping("/array1")
 	public int[] array() {
 		return new int[]{1, 2, 3, 4};
 	}
 
 	@GetMapping("/names")
 	public ArrayList<String> names(){
-
 		ArrayList<String> names = new ArrayList<String>();
 		names.add("Svetlana");
 		names.add("Irina");
@@ -60,7 +61,22 @@ public class DatoriumApiApplication {
 
 	}
 
-// 2. Create an object (new class, cheese or wine or whatever) in the endpoint, fill the object, access it from the URL	
-	
+// 2. Create an object (new class, cheese or wine or whatever) in the endpoint, fill the object, access it from the URL
+
+	@GetMapping("/group")
+	public Group group() {
+		Group group = new Group("Selfmade", 5);
+		return group;
+	}
+		public class Group{
+			public String name;
+			public int members;
+
+			public Group (String name, int members ){
+				this.name = name;
+				this.members = members;
+			}
+		}
+
 }
 ```
