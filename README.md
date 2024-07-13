@@ -36,4 +36,5 @@ two ginger cats - Ķiploks (Garlic) and
 Grauzdiņš (Toast), and I am ready to
 change my career path.
 
-- **Beatrice:** 
+- **Beatrice:**
+I am Beatrice, I  am from Germany but living and working in Latvia for some years already. I am working in diplomacy currently and want to change (back) to something that interests me again and gives me more flexibility. 
