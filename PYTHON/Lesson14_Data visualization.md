@@ -50,3 +50,18 @@ plt.show()
 
 ### HARD
 - Task 3: Create a filtered DataFrame that includes Category == 'Clothing' and Gender == 'M'. How many rows are there in this filtered DataFrame? Format the result as follows: The filtered DataFrame has XXXX rows
+
+```py
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dataset = pd.read_csv("/content/transaction_dataset.csv")
+
+df = pd.DataFrame(dataset)
+
+filtered_df = dataset[(dataset['Gender'] == 'M') & (dataset['Category'] == 'Clothing')]
+
+fitered_data_rows = filtered_df.shape[0]
+
+print(f"The filtered DataFrame has {fitered_data_rows} rows.")
+```
