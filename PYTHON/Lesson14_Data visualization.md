@@ -1,5 +1,7 @@
-### EASY
+## EASY
 - Task 1: Create a bar chart that shows the count of transactions for each unique value in the 'Gender' column (including NaN values). 
+
+VERSION 1:
 
 ```py
 import pandas as pd
@@ -20,6 +22,32 @@ plt.show()
 ```
 
 ![Unknown](https://github.com/user-attachments/assets/e7d3e5e1-14b4-4777-92db-1d8d5f53b27c)
+
+VERSION 2:
+```py
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    'TransactionID': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    'Gender': ['Male', 'Female', 'Female', 'Male', None, 'Male', 'Female', None, 'Female', 'Male']
+}
+df = pd.DataFrame(data)
+
+gender_counts = df['Gender'].value_counts(dropna=False)
+
+plt.figure(figsize=(10, 6))
+gender_counts.plot(kind='bar', color=['skyblue', 'salmon', 'gray'])
+
+plt.xlabel('Gender')
+plt.ylabel('Count of Transactions')
+plt.title('Count of Transactions for Each Gender')
+
+plt.xticks(rotation=0)
+plt.show()
+```
+![Unknown](https://github.com/user-attachments/assets/81941778-69a9-4c8b-ba05-b67974f958e6)
+
 
 ### MEDIUM
 - Task 2: Create a horizontal bar chart that shows the top 5 most frequent names in the DataFrame, based on the 'name' column. (First, create a grouped DataFrame (name_df), then filter it using iloc, and finally create the visualization.)
