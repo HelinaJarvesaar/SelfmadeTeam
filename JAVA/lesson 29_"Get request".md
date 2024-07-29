@@ -61,7 +61,8 @@ public class DatoriumApiApplication {
 
 	}
 
-// 2. Create an object (new class, cheese or wine or whatever) in the endpoint, fill the object, access it from the URL
+// 2. Create an object (new class, cheese or wine or whatever) in the endpoint,
+// fill the object, access it from the URL
 
 	@GetMapping("/group")
 	public Group group() {
@@ -78,7 +79,8 @@ public class DatoriumApiApplication {
 			}
 		}
 
-// 3. Create a new endpoint, that generates a two dimensional int array. Endpoint should be in /draw and should return two dimensional array
+// 3. Create a new endpoint, that generates a two dimensional int array.
+// Endpoint should be in /draw and should return two dimensional array
 
 	@GetMapping("/draw")
 	public int[][] draw(){
@@ -112,3 +114,6 @@ public class DatoriumApiApplication {
 
 }
 ```
+<img width="250" alt="Screenshot 2024-07-29 at 13 56 58" src="https://github.com/user-attachments/assets/c883c0b3-4771-46a9-b2bf-41f8ef661790">
+
+
