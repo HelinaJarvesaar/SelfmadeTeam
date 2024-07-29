@@ -79,6 +79,7 @@ public class DatoriumApiApplication {
 		}
 
 // 3. Create a new endpoint, that generates a two dimensional int array. Endpoint should be in /draw and should return two dimensional array
+
 	@GetMapping("/draw")
 	public int[][] draw(){
 		return new int[][]{
@@ -98,6 +99,16 @@ public class DatoriumApiApplication {
 			new int[]{0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0},
 			new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0}};
 	}
+
+	@GetMapping("/draw2")
+	public int[][] draw2() {
+		return new int[][]{
+		            {1, 0, 0, 0, 1},
+		            {0, 1, 0, 1, 0},
+		            {0, 0, 1, 0, 0},
+		            {0, 1, 0, 1, 0},
+		            {1, 0, 0, 0, 1}};
+    	}
 
 }
 ```
