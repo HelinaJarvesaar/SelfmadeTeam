@@ -3,6 +3,12 @@
 1. How many Pokémons are with 'Type 1' == Water as a % of total?
 
 ```py
+import pandas as pd #analysis
+import matplotlib.pyplot as plt
+
+pokemon_df = pd.read_csv('/content/Pokemon.csv')
+pokemon_df.head(n=10)
+
 total_number_of_Pokemons = pokemon_df['Type 1'].count()
 print(f'Total number of Pokemons: {total_number_of_Pokemons}')
 
