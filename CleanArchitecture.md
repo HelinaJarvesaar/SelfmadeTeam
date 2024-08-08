@@ -1,10 +1,12 @@
 # Clean Architecture
 Clean Architecture is a software design philosophy introduced by Robert C. Martin (also known as Uncle Bob) that emphasizes the separation of concerns, maintainability, and independence from external frameworks and technologies. It is a way to structure software so that it is easier to understand, develop, test, and maintain over time.
 
-Clean Architecture is a layered architecture that organizes code into a set of concentric circles, each representing different layers of the application. These layers include entities, use cases, interface adapters, and frameworks/drivers. The core idea is that the inner layers should be independent of the outer layers, making the system more modular and easier to test.
+Clean Architecture is a layered architecture that organizes code into a set of concentric circles, each representing different layers of the application. These layers include entities, use cases, interface adapters, and frameworks/drivers.
 
 
 ## What's the importance of each layer:
+
+The core idea is that the inner layers should be independent of the outer layers, making the system more modular and easier to test.
 
 - **Entities:**
   Represent business logic and rules. They encapsulate general rules and are independent of other parts.
@@ -24,7 +26,6 @@ To better understand Clean Architecture, let’s look at the corresponding diagr
 
 In this diagram, the entities are the core business objects that define the essential properties and behaviors. The Application Core encapsulate the application-specific business logic, defining what the application should do. The infrastructure handle the interaction between the use cases and the external world, such as web requests and database access. Finally, the User interface layer includes the actual implementation of the web framework, database, and other external dependencies.
 
-By organizing your application in this manner, you can achieve a clean separation of concerns, making your codebase more robust, testable, and maintainable.
 
 ## Why is structure and architecture needed:
 
