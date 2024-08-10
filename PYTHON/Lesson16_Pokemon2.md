@@ -1,16 +1,11 @@
 # HOMEWORK
 **Task: Visualizing the correlation of Attack and Defense variables of two Types: Grass and Water Type 1 Pokémon.**
 
-```py
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-pokemon_df = pd.read_csv("/content/Pokemon.csv")
-```
-
 **1. Create two DataFrame Grass and Water**
 ```py
+import pandas as pd
+pokemon_df = pd.read_csv("/content/Pokemon.csv")
+
 grass_df = pokemon_df[pokemon_df["Type 1"] == "Grass"]
 water_df = pokemon_df[pokemon_df["Type 1"] == "Water"]
 ```
@@ -33,6 +28,9 @@ plt.legend()
 
 VERSION 2
 ```py
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(25, 8))
 
 sns.regplot(data=grass_df, x='Attack', y='Defense', label = 'Type Grass', marker = 'D', color="SeaGreen", line_kws={'color':'DarkSeaGreen'}, ax=ax1)
