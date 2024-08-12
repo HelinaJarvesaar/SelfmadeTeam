@@ -1,3 +1,4 @@
+# HOMEWORK
 ## EASY
 - Task 1: Create a bar chart that shows the count of transactions for each unique value in the 'Gender' column (including NaN values). 
 
