@@ -1,4 +1,4 @@
-## IntelliJ IDEA project:
+## IntelliJ IDEA project: Create a GET method for users
 1. Create UserController endpoint to get all users
 2. Create a UserService method to get all users
 3. Create a UserRepository method to get all users
