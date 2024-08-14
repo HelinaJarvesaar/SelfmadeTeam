@@ -1,4 +1,4 @@
-## IntelliJ IDEA project:
+## IntelliJ IDEA project: Create controller/service/dto
 
 <img width="285" alt="Screenshot 2024-08-09 at 13 19 28" src="https://github.com/user-attachments/assets/b3a4d7c0-fcb5-463a-a160-98ac34df2e10">
 
