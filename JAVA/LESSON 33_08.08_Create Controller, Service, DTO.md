@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
-@CrossOrigin // CORS policy
+@CrossOrigin 
 public class DatoriumApiApplication  { // Main class
 
 	public static void main(String[] args) { //this is the only thing supposed to be here
