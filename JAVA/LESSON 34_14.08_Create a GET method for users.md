@@ -50,9 +50,9 @@ public class UserController {
         return userService.add(user);
     }
 
-    @GetMapping("/allUsers")
-    public List<User> getAllUsers(){
-        return userService.getAllUsers();
+    @GetMapping("/get")
+    public List<User> get(){
+        return userService.get();
     }
 
 }
@@ -77,8 +77,8 @@ public class UserService {
         return userRepo.add(user);
     }
 
-    public List<User> getAllUsers(){
-        return userRepo.getAllUsers();
+    public List<User> get(){
+        return userRepo.get();
     }
 }
 ```
@@ -101,7 +101,7 @@ public class UserRepo {
         return users.size();
     }
 
-    public List<User> getAllUsers(){
+    public List<User> get(){
         return users;
     }
 }
