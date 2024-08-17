@@ -34,7 +34,7 @@ import com.datorium.Datorium.API.DTOs.User;
 import com.datorium.Datorium.API.Services.UserService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/user")
@@ -51,7 +51,7 @@ public class UserController {
     }
 
     @GetMapping("/get")
-    public List<User> get(){
+    public ArrayList<User> get(){
         return userService.get();
     }
 
@@ -65,7 +65,6 @@ import com.datorium.Datorium.API.DTOs.User;
 import com.datorium.Datorium.API.REPO.UserRepo;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class UserService {
     private UserRepo userRepo;
@@ -77,7 +76,7 @@ public class UserService {
         return userRepo.add(user);
     }
 
-    public List<User> get(){
+    public ArrayList<User> get(){
         return userRepo.get();
     }
 }
@@ -90,7 +89,7 @@ package com.datorium.Datorium.API.REPO;
 import com.datorium.Datorium.API.DTOs.User;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class UserRepo {
 
@@ -101,7 +100,7 @@ public class UserRepo {
         return users.size();
     }
 
-    public List<User> get(){
+    public ArrayList<User> get(){
         return users;
     }
 }
