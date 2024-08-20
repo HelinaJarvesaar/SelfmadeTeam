@@ -51,8 +51,8 @@ The difference between supervised and unsupervised training in machine learning 
 
 a) Labels:
 
-- Supervised Learning: Uses labeled data (input-output pairs).
-- Unsupervised Learning: Uses unlabeled data (only inputs).
+- Supervised Learning: Uses **labeled data** (input-output pairs).
+- Unsupervised Learning: Uses **unlabeled data** (only inputs).
   
 b) Objective:
 
