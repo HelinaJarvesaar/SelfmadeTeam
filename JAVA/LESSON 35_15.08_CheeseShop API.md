@@ -58,7 +58,7 @@ public class CheeseShopController {
 
     @PostMapping ("/update")
     public Cheese update (@RequestBody UpdateCheeseDTO updateCheeseDTO){
-        return cheeseShopService.update(updateCheeseDTO.cheeseIndex, updateCheeseDTO.cheese);
+        return cheeseShopService.update(updateCheeseDTO.name, updateCheeseDTO.weight, updateCheeseDTO.cheese);
     }
 }
 ```
@@ -72,7 +72,7 @@ import com.datorium.Datorium.API.REPO.CheeseShopRepo;
 import java.util.ArrayList;
 
 public class CheeseShopService {
-    private CheeseShopRepo cheeseShopRepo;
+    private final CheeseShopRepo cheeseShopRepo;
     public CheeseShopService() {
         cheeseShopRepo = new CheeseShopRepo();
     }
@@ -85,8 +85,8 @@ public class CheeseShopService {
         return cheeseShopRepo.get();
     }
 
-    public Cheese update(int cheeseIndex, Cheese updateCheeseDTO){
-        return cheeseShopRepo.update(cheeseIndex, updateCheeseDTO);
+    public Cheese update(String name, int weight, Cheese updateCheeseDTO){
+        return cheeseShopRepo.update(name, weight, updateCheeseDTO);
     }
 }
 ```
@@ -102,19 +102,23 @@ public class CheeseShopRepo {
 
     private final ArrayList<Cheese> cheeses = new ArrayList<>(); //mocked db
 
-    public int add(Cheese cheese){
+    public int add(Cheese cheese) {
         cheeses.add(cheese);
         return cheeses.size();
     }
 
-    public ArrayList<Cheese> get(){
+    public ArrayList<Cheese> get() {
         return cheeses;
     }
 
-    public Cheese update(int cheeseIndex, Cheese updateCheeseDTO){
-        var cheese = cheeses.get(cheeseIndex);
-        cheese.name = updateCheeseDTO.name;
-        return cheese;
+    public Cheese update(String name, int weight, Cheese updateCheeseDTO) {
+        for (Cheese cheese : cheeses) {
+            if (cheese.name.equals(updateCheeseDTO.name)) {
+                cheese.weight = weight;
+                return cheese;
+            }
+        }
+        return null;
     }
 }
 ```
@@ -125,6 +129,7 @@ package com.datorium.Datorium.API.DTOs;
 
 public class Cheese {
     public String name;
+    public int weight;
 }
 ```
 
@@ -134,20 +139,21 @@ package com.datorium.Datorium.API.DTOs;
 
 public class UpdateCheeseDTO {
     public Cheese cheese;
-    public int cheeseIndex;
+    public String name;
+    public int weight;
 }
 ```
 
 
 ADD cheese with POSTMAN:
-<img width="935" alt="Screenshot 2024-08-20 at 16 52 04" src="https://github.com/user-attachments/assets/96d55eb4-4679-45b1-b87b-ea852c8008b9">
+<img width="854" alt="Screenshot 2024-08-20 at 17 38 59" src="https://github.com/user-attachments/assets/874e7221-4e1d-497a-8c05-af38badc4723">
 
 GET all cheeses with POSTMAN:
-<img width="932" alt="Screenshot 2024-08-20 at 16 53 05" src="https://github.com/user-attachments/assets/a5bc0a31-90b9-4144-b6c2-0dcb8fd56154">
+<img width="851" alt="Screenshot 2024-08-20 at 17 40 10" src="https://github.com/user-attachments/assets/869322a9-f7bb-43f0-9623-b6bafab0da65">
 
-UPDATE cheese with POSTMAN:
-<img width="938" alt="Screenshot 2024-08-20 at 16 55 28" src="https://github.com/user-attachments/assets/983c1da7-7360-436d-b764-a89547d16b42">
+UPDATE cheese weight with POSTMAN:
+<img width="856" alt="Screenshot 2024-08-20 at 17 36 11" src="https://github.com/user-attachments/assets/fbb4cda6-e0d3-4f4c-b840-22274dc9be96">
 
 AFTER UPDATE GET all cheeses with POSTMAN:
-<img width="939" alt="Screenshot 2024-08-20 at 16 56 08" src="https://github.com/user-attachments/assets/7f80290e-cac2-452a-a15f-ae7943b47784">
+<img width="850" alt="Screenshot 2024-08-20 at 17 42 02" src="https://github.com/user-attachments/assets/c118cd0a-160e-4035-b2d3-b5824146a964">
 
