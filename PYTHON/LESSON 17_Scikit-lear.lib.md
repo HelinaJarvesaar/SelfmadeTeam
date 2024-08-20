@@ -6,6 +6,8 @@
 
 https://scikit-learn.org/stable/
 
+https://scikit-learn.org/stable/modules/linear_model.html
+
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 
 ___
