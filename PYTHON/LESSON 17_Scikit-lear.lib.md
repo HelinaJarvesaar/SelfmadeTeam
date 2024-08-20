@@ -1,9 +1,14 @@
 # TEAMWORK
 
+
+
 # Scikit-learn library
+
 https://scikit-learn.org/stable/
+
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 
+___
 ## 1. What is an error rate?
    
 An error rate in machine learning is a metric that quantifies the proportion of incorrect predictions made by a model.
@@ -18,10 +23,9 @@ accuracy = accuracy_score(y_true, y_pred)
 error_rate = 1 - accuracy
 ```
 
-
 The error rate tells you how reliable your model is. A lower error rate means your model is more accurate and trustworthy.
    
-
+___
 ## 2. Where you could use other machine-learning models?
 Machine learning models help solve real-world problems by making predictions, optimizing processes, and uncovering patterns across diverse fields, from healthcare to finance, retail, and beyond. Each industry leverages specific models and techniques tailored to its unique challenges and data types.
 
@@ -39,7 +43,8 @@ Machine learning models help solve real-world problems by making predictions, op
 - **Security:** Intrusion detection, facial recognition, and spam filtering.
 - **Environmental Science:** Climate modeling, wildlife conservation, and natural disaster prediction.
 - **Human Resources:** Employee attrition prediction, resume screening, and workforce planning.
-
+  
+___
 ## 3. What is the difference between supervised and unsupervised training?
 The difference between supervised and unsupervised training in machine learning lies in how the models learn from the data and the type of tasks they are used for.
 **Key Differences:**
@@ -60,7 +65,7 @@ c) Typical Applications:
 - Unsupervised Learning: Used for tasks like clustering (e.g., customer segmentation) and dimensionality reduction (e.g., simplifying large datasets).
 
 In essence, supervised learning is about learning from examples with known outcomes, while unsupervised learning is about exploring data to find hidden structures without explicit guidance.
-
+___
 ## 4. How to import different models from the scikit-learn package?
 You use `import` statement in Python.
 
@@ -73,8 +78,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 ```
-
-
+___
 ## 5. How can you evaluate the performance of a machine learning model in scikit-learn?
 
 1. Split the data into training and testing sets.
@@ -163,7 +167,7 @@ plt.legend()
 plt.show()
 ```
 
-
+___
 ## 6. What metrics are commonly used for evaluation?
 To evaluate a machine learning model effectively, you should choose appropriate metrics based on the type of problem you're working on:
 - **Classification:** Accuracy, Precision, Recall, F1-Score, Confusion Matrix, ROC Curve, AUC.
@@ -172,9 +176,10 @@ To evaluate a machine learning model effectively, you should choose appropriate 
   
 Using these metrics helps you understand your model’s strengths and weaknesses, and guides you in improving its performance.
 
-
+___
 ## 7. What is model overfitting, and how can it be prevented?
 
 - Model overfitting occurs when a machine learning model learns the training data too well, capturing noise and details that do not generalize to unseen data. As a result, the model performs exceptionally well on the training set but poorly on new, unseen data. Overfitting typically leads to high variance and poor generalization.
   
 - Preventing overfitting involves balancing model complexity and ensuring that the model generalizes well to unseen data. Key strategies include simplifying the model, applying regularization, using cross-validation, pruning, stopping training early, increasing the training data, selecting relevant features, and using ensemble methods. By implementing these techniques, you can improve the model’s ability to generalize and avoid overfitting.
+___
