@@ -113,6 +113,8 @@ GROUP BY Owners.City;
 
 <img width="594" alt="Screenshot 2024-08-27 at 21 56 11" src="https://github.com/user-attachments/assets/5d3172b9-21d7-4032-98f7-82c9067a605e">
 
+### 5. Explore relationships with SQLight.
+
 
 
 
