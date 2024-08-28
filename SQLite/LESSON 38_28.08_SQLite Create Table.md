@@ -183,5 +183,6 @@ JOIN Products ON Orders.ProductID = Products.ProductID;
    
 View Tables: You can now explore the structure and data in your database directly within IntelliJ.
 
-<img width="1321" alt="Screenshot 2024-08-28 at 23 52 16" src="https://github.com/user-attachments/assets/af3a3656-a5de-4506-871a-12e6f621a926">
+<img width="1382" alt="Screenshot 2024-08-29 at 00 13 18" src="https://github.com/user-attachments/assets/ce3bc10f-5447-4152-82b0-0d8ec129afb6">
+
 
