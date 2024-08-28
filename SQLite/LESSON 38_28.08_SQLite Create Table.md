@@ -15,7 +15,22 @@ Is a technique that allows working with databases through objects without writin
 
 However, it may be less efficient for complex queries compared to direct SQL.
 
-# SQL: insert, delete, update, select: 
+
+# TEAMWORK 
+
+1. Read about SQL, learn insert, delete, update, select on this page  https://sqliteonline.com/
+
+   Download dbBrowser for sqlite  https://sqlitebrowser.org/dl/
+
+   A lot of resources is here https://www.w3schools.com/sql/default.asp
+
+2. Create 3 tables with some non-complex data, populate them with values, you will be able to use this database later on, but this is just for you to practise and understand db a bit better.
+
+3. Try to open the database that you created in your project (you can see the my.db in files on the left side)
+
+
+
+## SQL: insert, delete, update, select: 
 
 1. `INSERT`: This statement is used to add new rows to a table.
 ```sql
@@ -47,11 +62,10 @@ To retrieve specific data with a condition:
 SELECT * FROM Customers WHERE City = 'New York';
 ```
 
-# TEAMWORK 
 
 ## Create 3 tables with some non-complex data, populate them with values 
 
-### 1. Customers Table
+1. CUSTOMERS TABLE
 
 This table stores customer details.
 ```sql
@@ -69,8 +83,7 @@ VALUES
 (3, 'Emily Davis', 'Chicago', 'emily@example.com');
 ```
 
-
-### 2. Products Table
+2. PRUDCTION TABLE
 
 This table stores product details.
 ```sql
@@ -87,7 +100,7 @@ VALUES
 (3, 'Tablet', 299.99);
 ```
 
-### 3. Orders Table
+3. ORDERS TABLE
 
 This table stores order details and relates to both Customers and Products.
 
@@ -160,5 +173,15 @@ JOIN Customers ON Orders.CustomerID = Customers.CustomerID
 JOIN Products ON Orders.ProductID = Products.ProductID;
 ```
 
+## OPEN DataBase in INTELLiJ IDEA:
 
+1. Open the Database Tool Window: Go to View > Tool Windows > Database.
+2. Add Data Source:
+3. Click the + button to add a new data source.
+4. Select SQLite.
+5. In the "File" field, browse to your my.db file.
+   
+View Tables: You can now explore the structure and data in your database directly within IntelliJ.
+
+<img width="1321" alt="Screenshot 2024-08-28 at 23 52 16" src="https://github.com/user-attachments/assets/af3a3656-a5de-4506-871a-12e6f621a926">
 
