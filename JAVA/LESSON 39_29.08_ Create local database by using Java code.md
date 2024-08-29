@@ -145,6 +145,8 @@ public class UserService {
 
 ```
 
+There is also need to: Open Modul Settings -> Global Libraries -> "+" From Marven... -> download library: jdbc-sqlite 🔍 -> OK
+
 POSTMAN:
 
 
