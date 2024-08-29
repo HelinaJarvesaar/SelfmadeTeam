@@ -1,4 +1,4 @@
-# HOMEWORK:
+# TEAMWORK:
 
 1. Use the example of SQL in Java and add an "AddUser" method inside the previous Datorium API project - User (or Cheese) repository.
 2. Try and run postman and verify with db browser that the data is there
