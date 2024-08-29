@@ -1,4 +1,3 @@
-Hello Hello, I try fork, push, pull, commit and etc
 # Hi to everyone! 🙂
 
 **Team `SELFMADED`:**
