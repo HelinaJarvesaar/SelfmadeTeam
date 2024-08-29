@@ -145,15 +145,26 @@ public class UserService {
 
 ```
 
-There is also need to: Open Modul Settings -> Global Libraries -> "+" From Marven... -> download library: jdbc-sqlite 🔍 -> OK
+## There is also need to: 
 
-POSTMAN:
+Datorium-API folder right click -> `Open Modul Settings` -> `Global Libraries` -> `+` `From Marven...` -> download library: `🔍 jdbc-sqlite` -> choose library -> OK -> Libarby will ba added: Choose Module `Datorium-API.main` -> OK
+
+
+## Created Table my.db:
+
+<img width="310" alt="Screenshot 2024-08-30 at 00 20 51" src="https://github.com/user-attachments/assets/ed7dc93c-0d19-4733-b263-18d99072a3ca">
+
+
+
+
+
+### POSTMAN:
 
 
 <img width="621" alt="Screenshot 2024-08-29 at 23 55 35" src="https://github.com/user-attachments/assets/d4f7cc08-4fed-490f-94b9-eccd2c095490">
 
 
-BD Browser:
+### BD Browser:
 
 
 <img width="629" alt="Screenshot 2024-08-29 at 23 57 33" src="https://github.com/user-attachments/assets/c732d1de-d23c-4afd-be5a-60cd33fafde3">
