@@ -40,6 +40,8 @@ print("Simulated Probabilities:", probabilities)
 print("Theoretical Probabilities: {'HH': 0.25, 'HT': 0.25, 'TH': 0.25, 'TT': 0.25}")
 ```
 ![Unknown](https://github.com/user-attachments/assets/830f77b1-e037-494b-954a-fa4c3af2c9ac)
+<img width="666" alt="Screenshot 2024-09-07 at 21 41 16" src="https://github.com/user-attachments/assets/75ca8cd9-c51e-4841-b209-51f916b3d299">
+
 
 ### VERSION 2:
 ```py
