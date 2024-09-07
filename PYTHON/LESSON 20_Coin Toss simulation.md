@@ -1,13 +1,15 @@
 # TEAMWORK
 
 Design a simulation where you toss two coins simultaneously. 
+
 Record the possible outcomes (heads or tails for each coin) and run the simulation for multiple trials (e.g., 100, 500, or 1000 tosses). 
+
 After collecting the data:
 - Calculate the probabilities of each outcome (HH, HT, TH, TT).
 - Visualize the results using a bar chart or pie chart to represent the frequencies and probabilities of each outcome.
 - Analyze whether the results align with the expected theoretical probabilities.
 
-VERSION 1:
+### VERSION 1:
 ```py
 import numpy as np
 import matplotlib.pyplot as plt
@@ -39,7 +41,7 @@ print("Theoretical Probabilities: {'HH': 0.25, 'HT': 0.25, 'TH': 0.25, 'TT': 0.2
 ```
 ![Unknown](https://github.com/user-attachments/assets/830f77b1-e037-494b-954a-fa4c3af2c9ac)
 
-VERSION 2:
+### VERSION 2:
 ```py
 import numpy as np
 
