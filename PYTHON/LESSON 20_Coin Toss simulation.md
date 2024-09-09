@@ -87,7 +87,7 @@ import matplotlib.pyplot as plt
 
 labels = ['HH (Heads-Heads)', 'HT (Heads-Tails)', 'TH (Tails-Heads)', 'TT (Tails-Tails)']
 
-num_colors = len(y)
+num_colors = len(labels)
 colors = np.random.rand(num_colors, 3) # each run new random colors
 
 fig, axes = plt.subplots(1, len(throws), figsize=(18, 6))
