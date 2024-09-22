@@ -93,7 +93,7 @@ Writing code to test my code - a specific code that we want to write to make sur
 - We should hard code the data in unit tests!
   
 ### What makes good unit test:
-  
+
 <img width="879" alt="Screenshot 2024-09-22 at 19 13 10" src="https://github.com/user-attachments/assets/fde9bb11-0a28-4fac-8163-48af83a85159">
 
 
