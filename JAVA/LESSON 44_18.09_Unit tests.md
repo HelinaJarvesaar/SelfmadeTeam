@@ -51,7 +51,7 @@ public class UserService {
 
 ___
 
-## 1. DEBUG - testing manually
+## 1. DEBUGGING - testing manually
 
 https://www.jetbrains.com/help/idea/debugging-code.html
 
@@ -83,14 +83,22 @@ ___
 
 ## 2. UNIT TESTS
 
-- Writing code to test my code - a specific code that we want to write to make sure small portion of our program is working correctly, we go through all edge cases
+Writing code to test my code - a specific code that we want to write to make sure small portion of our program is working correctly, we go through all edge cases
 
 - **TDD** - TestDrivenDevelopment
 
 - Naming Unit Tests: https://www.baeldung.com/java-unit-testing-best-practices
 
 	(e.g The name of unit test should explain on what kind of scenario what should happen)
+- We should hard code the data in unit tests!
+  
+### What makes good unit test:
+  
+<img width="879" alt="Screenshot 2024-09-22 at 19 13 10" src="https://github.com/user-attachments/assets/fde9bb11-0a28-4fac-8163-48af83a85159">
 
+
+
+  
 TestExampleApplicationTests.java
 ```java
 package com.example.demo;
