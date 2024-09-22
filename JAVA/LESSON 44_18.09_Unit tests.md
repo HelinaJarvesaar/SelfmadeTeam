@@ -167,6 +167,83 @@ Hi, I want to be able to get a sum of 2 numbers, but if the sum is above 100, th
 
 3. Create a unit test for this method.
 
+```java
+// mathService.java
+
+package com.example.demo;
+
+public class MathService {
+
+    public int getSum(int number1, int number2) {
+        if (number1 + number2 > 100) {
+            return 0;
+        }
+        return number1 + number2;
+    }
+}
+
+// TextExampleApplication.java
+
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TextExampleApplication {
+
+	public static void main(String[] args) {
+
+		var mathService = new MathService();
+
+		System.out.println(mathService.getSum(45, 45));
+		SpringApplication.run(TextExampleApplication.class, args);
+	}
+}
+
+// TextExampleApplicationTests.java
+
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.util.Assert;
+
+@SpringBootTest
+class TextExampleApplicationTests {
+	// Hi, I want to be able to get a sum of 2 numbers,
+	// but if the sum is above 100, then I want to receive 0 instead.
+
+	@Test
+
+	void WHEN_getSumIsBelow100_THEN_ResultIsGetSum(){
+		var mathService = new MathService();
+
+		var sum = mathService.getSum(45, 45);
+
+		Assert.isTrue(sum == 90 , "Hey want to get sum of 2 numbers if the sum is under 100 and 0 if above 100");
+	}
+
+	@Test
+	void WHEN_getSumIs100_THEN_ResultIs100(){
+		var mathService = new MathService();
+
+		var sum = mathService.getSum(50, 50);
+
+		Assert.isTrue(sum == 100, "Hey want to get sum of 2 numbers if the sum is under 100 and 0 if above 100");
+	}
+
+	@Test
+	void WHEN_getSumIsAbove100_THEN_ResultIs0(){
+		var mathService = new MathService();
+
+		var sum = mathService.getSum(50, 60);
+
+		Assert.isTrue(sum == 0, "Hey if the sum of 2 numbers is above 100 I want to receive 0");
+	}
+}
+```
+
 
 
 
