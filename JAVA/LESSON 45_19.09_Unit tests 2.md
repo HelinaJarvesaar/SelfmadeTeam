@@ -86,3 +86,5 @@ public class GameTests {
     }
 }
 ```
+
+<img width="1151" alt="Screenshot 2024-09-22 at 23 44 26" src="https://github.com/user-attachments/assets/1a9bc8db-ee8b-444a-bfdc-d8ac9820f165">
