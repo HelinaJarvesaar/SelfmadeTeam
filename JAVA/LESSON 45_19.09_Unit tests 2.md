@@ -38,7 +38,7 @@ public class Game{
 
 GameTests.java
 
-```
+```java
 package com.example.demo;
 
 import org.junit.jupiter.api.Test;
