@@ -1,4 +1,4 @@
-TASK:
+## TASK:
 
 1. We need to choose a city randomly.
 2. The chance for the city should be proportional for the citizen count.
@@ -98,6 +98,14 @@ public class FinalProject1Application {
 	}
 }
 ```
+
+## INDIVIDUAL HOMEWORK
+
+1. Log in leetcode - OR ANY OTHER developer site where you can get problems to solve
+   
+	https://leetcode.com/problemset/
+
+2. Choose a random problem from leetcode algorithms problem, which has difficulty Medium, but if you can't go Easy
 
 
 
