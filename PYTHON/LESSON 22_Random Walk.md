@@ -13,6 +13,7 @@ How many steps ⏫  can you actually get?
 
 ```py
 import random
+import pylab
 
 steps = 1000
 steps_up = 0
@@ -29,10 +30,7 @@ for i in range (steps):
 
 print(f"Location after {steps} steps: {location}")
 print(f"Number of steps-up: {steps_up}")
-```
-<img width="355" alt="Screenshot 2024-09-27 at 23 32 30" src="https://github.com/user-attachments/assets/71ae7faa-bed6-43ed-81e5-2938fb4e3781">
 
-```py
 pylab.figure(figsize=(10, 6))
 pylab.plot(locations, label="1D Random Walk", color='navy')
 pylab.title(f"1D Random Walk - {steps} Steps")
@@ -43,6 +41,8 @@ pylab.legend()
 
 pylab.show()
 ```
+
+<img width="355" alt="Screenshot 2024-09-27 at 23 32 30" src="https://github.com/user-attachments/assets/71ae7faa-bed6-43ed-81e5-2938fb4e3781">
 
 <img width="847" alt="Screenshot 2024-09-27 at 23 33 30" src="https://github.com/user-attachments/assets/27c9e9a1-d750-4703-8538-d86d82961e94">
 
