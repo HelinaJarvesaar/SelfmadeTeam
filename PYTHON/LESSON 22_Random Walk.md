@@ -14,13 +14,15 @@ How many steps ⏫  can you actually get?
 ```py
 import random
 
-location = 0
 steps = 1000
 steps_up = 0
+location = 0
+locations = [location]
 
 for i in range (steps):
   step = random.choice([-1,1])
   location += step
+  locations.append(location)
 
   if step == 1:
     steps_up += 1
@@ -28,6 +30,21 @@ for i in range (steps):
 print(f"Location after {steps} steps: {location}")
 print(f"Number of steps-up: {steps_up}")
 ```
+<img width="355" alt="Screenshot 2024-09-27 at 23 32 30" src="https://github.com/user-attachments/assets/71ae7faa-bed6-43ed-81e5-2938fb4e3781">
 
-<img width="385" alt="Screenshot 2024-09-27 at 23 22 11" src="https://github.com/user-attachments/assets/6fd7bc5b-c1f3-46bf-84d0-ebbfb29444e4">
+```py
+pylab.figure(figsize=(10, 6))
+pylab.plot(locations, label="1D Random Walk", color='navy')
+pylab.title(f"1D Random Walk - {steps} Steps")
+pylab.xlabel("Steps")
+pylab.ylabel("Location")
+pylab.grid(True)
+pylab.legend()
+
+pylab.show()
+```
+
+<img width="847" alt="Screenshot 2024-09-27 at 23 33 30" src="https://github.com/user-attachments/assets/27c9e9a1-d750-4703-8538-d86d82961e94">
+
+
 
