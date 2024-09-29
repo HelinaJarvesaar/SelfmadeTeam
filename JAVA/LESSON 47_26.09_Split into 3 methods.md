@@ -1,4 +1,6 @@
-# Before:
+# Split the getRandomCity into 3 different methods.
+
+## Before:
 
 ```java
 package com.example.demo;
@@ -40,7 +42,7 @@ public class CityService {
 ```
 
 
-# After splitting the getRandomCity into 3 different methods:
+## After splitting the getRandomCity into 3 different methods:
 ```java
 package com.example.demo.CityLottery;
 
